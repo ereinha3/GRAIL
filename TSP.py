@@ -17,9 +17,9 @@ class TSP_Task:
     """
 
     def __init__(self,
-                 num_train=1000,
-                 num_test=200,
-                 num_val=200,
+                 num_train=2048,
+                 num_test=256,
+                 num_val=256,
                  data_loc='dataset'):
         self.easy_min_nodes  = 4
         self.easy_max_nodes  = 9
@@ -41,7 +41,7 @@ class TSP_Task:
                 'val': []
             }
         }
-        self.data_path = f"{self.data_loc}/TSP_train{self.num_train}_val{self.num_val}_test{self.num_test}.pkl"
+        self.data_path = f"{self.data_loc}/TSP.pkl"
 
     def compute_tour_length(self, graph, route):
         """Sum up graph[u][v]['weight'] over consecutive edges in route."""

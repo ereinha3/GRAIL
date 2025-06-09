@@ -1,4 +1,4 @@
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import Dataset
 from torch_geometric.data import Batch
 from torch_geometric.utils import from_networkx
 import torch

@@ -2,8 +2,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 
 # Choose one of the confirmed-compatible models
-works = ["Salesforce/codegen-350M-multi", "facebook/opt-350m", "facebook/opt-125m"]
-model_name = "Salesforce/codegen-350M-multi" 
+model_name = "EleutherAI/pythia-160m" 
 
 # Load tokenizer and model
 tokenizer = AutoTokenizer.from_pretrained(model_name)
