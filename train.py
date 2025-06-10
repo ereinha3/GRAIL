@@ -96,16 +96,12 @@ def train(model_code):
 
     base_model = AutoModelForCausalLM.from_pretrained(
         model_name,
-        load_in_8bit=True,
         device_map='auto'
     )
 
     for param in base_model.parameters():
         param.requires_grad = False
     base_model.eval()
-
-    base_model.config.use_cache = False   
-    base_model.gradient_checkpointing = True
 
     base_model.config.pad_token_id = tokenizer.eos_token_id
 
@@ -160,25 +156,9 @@ def train(model_code):
                         print("Early stopping triggered.")
                         break
 
-            gc.collect()
-            torch.cuda.empty_cache()
-
             epoch_counter += 1
 
         print(f"Training complete for {model_name} using {str(encoder)}.")
-        # Free GPU memory explicitly
-        encoder.cpu()
-        del encoder
-
-        del optimizer
-
-    base_model.cpu()
-    del base_model
-
-    del tokenizer
-    torch.cuda.empty_cache()
-    gc.collect()
-
 
     print("Training complete.")
 
@@ -276,12 +256,11 @@ def train_epoch(encoder, tokenizer, base_model, loader, optimizer, longest_input
 
         # (f) Forward through base_model
 
-        with autocast(device_type="cuda", dtype=torch.float16):
-            outputs = base_model(
-                inputs_embeds=full_embeds,
-                attention_mask=att_mask,
-                labels=labels,
-            )
+        outputs = base_model(
+            inputs_embeds=full_embeds,
+            attention_mask=att_mask,
+            labels=labels,
+        )
         loss = outputs.loss
 
         if torch.isnan(loss):
