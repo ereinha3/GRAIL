@@ -1,0 +1,982 @@
+{
+  "pythia160": {
+    "SAGEEncoder": {
+      "5": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 50,
+          "wrong_length": 0,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "6": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 7,
+          "wrong_length": 48,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "7": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 43,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "9": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 35,
+          "wrong_length": 8,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "8": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 37,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "4": {
+        "acc": 6,
+        "feas": 20,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 2,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "10": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 42,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "14": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 48,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "15": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 39,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "12": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 8,
+          "wrong_length": 31,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "13": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 43,
+          "duplicate_nodes": 1,
+          "made_up_node": 0
+        }
+      },
+      "11": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 44,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      }
+    },
+    "GATEncoder": {
+      "5": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 50,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "6": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 55,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "7": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 43,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "9": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 43,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "8": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 37,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "4": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 28,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "10": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 42,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "14": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 48,
+          "wrong_length": 0,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "15": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 39,
+          "wrong_length": 0,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "12": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 39,
+          "wrong_length": 0,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "13": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 44,
+          "wrong_length": 0,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "11": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 32,
+          "wrong_length": 12,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      }
+    },
+    "GINEncoder": {
+      "5": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 50,
+          "wrong_length": 0,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "6": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 3,
+          "wrong_length": 52,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "7": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 42,
+          "duplicate_nodes": 0,
+          "made_up_node": 1
+        }
+      },
+      "9": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 43,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "8": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 37,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "4": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 28,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "10": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 42,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "14": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 6,
+          "wrong_length": 42,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "15": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 39,
+          "wrong_length": 0,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "12": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 39,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "13": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 2,
+          "wrong_length": 42,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "11": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 44,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      }
+    },
+    "None": {
+      "5": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 50,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "6": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 55,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "7": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 43,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "9": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 43,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "8": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 37,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "4": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 28,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "10": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 42,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "14": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 48,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "15": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 39,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "12": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 39,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "13": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 44,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "11": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 44,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      }
+    }
+  },
+  "opt125": {
+    "SAGEEncoder": {
+      "5": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 50,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "6": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 55,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "7": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 40,
+          "wrong_length": 3,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "9": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 43,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "8": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 37,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "4": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 28,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "10": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 42,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "14": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 48,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "15": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 39,
+          "wrong_length": 0,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "12": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 39,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "13": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 2,
+          "wrong_length": 42,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "11": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 44,
+          "wrong_length": 0,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      }
+    },
+    "GATEncoder": {
+      "5": {
+        "acc": 4,
+        "feas": 46,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 0,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "6": {
+        "acc": 2,
+        "feas": 51,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 2,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "7": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 43,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "9": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 43,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "8": {
+        "acc": 0,
+        "feas": 36,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 1,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "4": {
+        "acc": 7,
+        "feas": 21,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 0,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "10": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 39,
+          "duplicate_nodes": 3,
+          "made_up_node": 0
+        }
+      },
+      "14": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 48,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "15": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 39,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "12": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 0,
+          "duplicate_nodes": 39,
+          "made_up_node": 0
+        }
+      },
+      "13": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 44,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "11": {
+        "acc": 0,
+        "feas": 44,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 0,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      }
+    },
+    "GINEncoder": {
+      "5": {
+        "acc": 4,
+        "feas": 46,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 0,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "6": {
+        "acc": 2,
+        "feas": 48,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 5,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "7": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 43,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "9": {
+        "acc": 0,
+        "feas": 1,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 42,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "8": {
+        "acc": 0,
+        "feas": 10,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 27,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "4": {
+        "acc": 7,
+        "feas": 21,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 0,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "10": {
+        "acc": 0,
+        "feas": 4,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 37,
+          "duplicate_nodes": 1,
+          "made_up_node": 0
+        }
+      },
+      "14": {
+        "acc": 0,
+        "feas": 4,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 43,
+          "duplicate_nodes": 1,
+          "made_up_node": 0
+        }
+      },
+      "15": {
+        "acc": 0,
+        "feas": 1,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 38,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "12": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 39,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "13": {
+        "acc": 0,
+        "feas": 32,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 12,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "11": {
+        "acc": 0,
+        "feas": 39,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 5,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      }
+    },
+    "None": {
+      "5": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 50,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "6": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 55,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "7": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 43,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "9": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 43,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "8": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 37,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "4": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 28,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "10": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 42,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "14": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 48,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "15": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 39,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "12": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 39,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "13": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 44,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      },
+      "11": {
+        "acc": 0,
+        "feas": 0,
+        "hall": {
+          "wrong_format": 0,
+          "wrong_length": 44,
+          "duplicate_nodes": 0,
+          "made_up_node": 0
+        }
+      }
+    }
+  }
+}

@@ -24,7 +24,7 @@ class TSP_Task:
         self.easy_min_nodes  = 4
         self.easy_max_nodes  = 9
         self.hard_min_nodes  = 10
-        self.hard_max_nodes  = 20
+        self.hard_max_nodes  = 15
         self.num_train       = num_train
         self.num_test        = num_test
         self.num_val         = num_val

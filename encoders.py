@@ -2,7 +2,6 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch_geometric.nn import SAGEConv, GINConv, GATConv
-from transformers import StoppingCriteria
 
 class SAGEEncoder(nn.Module):
     def __init__(self, max_degree, node_embed_dim, hidden_dim,
@@ -176,13 +175,3 @@ class GATEncoder(nn.Module):
             c_i = self.output_proj(c_i)
             cluster_embs.append(c_i)
         return torch.stack(cluster_embs, dim=0)  # [B, K, output_dim]
-
-
-class StopOnBracket(StoppingCriteria):
-    def __init__(self, tokenizer):
-        super().__init__()
-        self.tokenizer = tokenizer
-
-    def __call__(self, input_ids, scores=None, **kwargs):
-        # if last token decodes to ']', stop
-        return self.tokenizer.decode([input_ids[0, -1].item()]).strip() == "]"
