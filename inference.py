@@ -15,9 +15,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 def inference(model_code, encoder_code, verbose):
-    #
-    # 0) Load the same synthetic TSP dataset that training used.
-    #
+    # Load tsp dataset
     task = TSP_Task()
     task.load_dataset()
     test_probs = task.problem_set["easy"]["test"] + task.problem_set["hard"]["test"]
@@ -99,7 +97,7 @@ def inference(model_code, encoder_code, verbose):
 
         with torch.no_grad():
                         
-            prompts_with_cue = [p + "\nSolution:" for p in prompts]  # length = B = 1
+            prompts_with_cue = [p + "\nSolution:" for p in prompts] 
 
             # Tokenize prompt
             toks = tokenizer(prompts_with_cue, return_tensors="pt", padding=False)

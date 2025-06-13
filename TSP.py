@@ -81,10 +81,10 @@ class TSP_Task:
         else:
             raise ValueError(f"Invalid difficulty: {difficulty}")
 
-        # 2) Generate n random points in the 100x100 square
+        # Generate n random points in the 100x100 square
         points = [(random.randint(1, 100), random.randint(1, 100)) for _ in range(n)]
 
-        # 3) Build a complete metric graph H on n nodes
+        # Build a complete metric graph H on n nodes
         H = nx.Graph()
         for i in range(n):
             H.add_node(i, name=f"A{i}")
@@ -95,13 +95,13 @@ class TSP_Task:
                 d = int(round(math.hypot(xi - xj, yi - yj)))
                 H.add_edge(i, j, weight=d)
 
-        # 4) Solve exactly for the shortest tour
+        # Solve exactly for the shortest tour
         exact_length, exact_path = self.exact_solver(H)
 
-        # 5) Build the natural‐language prompt
+        # Build the natural‐language prompt
         problem_text = self.generate_problem(H)
 
-        # 6) Return the dict for this problem
+        # Return the dict for this problem
         return {
             'id': pid,
             'problem_text': problem_text,

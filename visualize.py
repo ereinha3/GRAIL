@@ -151,6 +151,65 @@ def plot_metrics(df, output_dir):
     plt.savefig(output_dir / 'all_encoders_comparison.png', dpi=300, bbox_inches='tight')
     plt.close()
 
+def make_results_table(df, output_dir):
+    # Aggregate mean for each (model, encoder) pair
+    grouped = df.groupby(['model', 'encoder']).mean(numeric_only=True)
+    # Prepare multi-index rows
+    index = [
+        ('accuracy', ''),
+        ('feasibility', ''),
+        ('hallucination', ''),
+        ('hallucination', 'wrong_format'),
+        ('hallucination', 'wrong_length'),
+        ('hallucination', 'duplicate_nodes'),
+        ('hallucination', 'made_up_node'),
+    ]
+    columns = []
+    for model, encoder in grouped.index:
+        columns.append((model, encoder))
+    table = pd.DataFrame(index=pd.MultiIndex.from_tuples(index, names=['metric', 'subtype']), columns=pd.MultiIndex.from_tuples(columns, names=['model', 'encoder']))
+    for (model, encoder), row in grouped.iterrows():
+        table.loc[('accuracy', ''), (model, encoder)] = row['accuracy']
+        table.loc[('feasibility', ''), (model, encoder)] = row['feasibility']
+        table.loc[('hallucination', ''), (model, encoder)] = row['hallucination']
+        table.loc[('hallucination', 'wrong_format'), (model, encoder)] = row['wrong_format']
+        table.loc[('hallucination', 'wrong_length'), (model, encoder)] = row['wrong_length']
+        table.loc[('hallucination', 'duplicate_nodes'), (model, encoder)] = row['duplicate_nodes']
+        table.loc[('hallucination', 'made_up_node'), (model, encoder)] = row['made_up_node']
+    # Save as CSV
+    output_dir = Path(output_dir)
+    output_dir.mkdir(exist_ok=True)
+    table.to_csv(output_dir / 'results_table.csv')
+    # Print pretty version
+    print('\n===== Results Table (mean over all node counts) =====')
+    print(table.round(3).fillna(''))
+
+def plot_metric_vs_nodecount(df, metric, output_dir, pad_top=False):
+    plt.figure(figsize=(10, 7))
+    df['pair'] = df['model'] + ' | ' + df['encoder']
+    ymax = 0
+    for pair, subdf in df.groupby('pair'):
+        subdf = subdf.sort_values('size')
+        y = subdf[metric]
+        plt.plot(subdf['size'], y, marker='o', label=pair)
+        if pad_top:
+            ymax = max(ymax, y.max())
+    plt.xlabel('Node Count')
+    plt.ylabel(f'{metric.replace("_", " ").capitalize()}')
+    plt.title(f'{metric.replace("_", " ").capitalize()} vs Node Count')
+    if pad_top:
+        plt.ylim(0, min(1.05, ymax * 1.05 + 0.01))
+    plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+    plt.tight_layout()
+    plt.savefig(Path(output_dir) / f'{metric}_vs_nodecount.png', dpi=300)
+    plt.close()
+
+def plot_all_metrics_vs_nodecount(df, output_dir):
+    plot_metric_vs_nodecount(df, 'accuracy', output_dir)
+    plot_metric_vs_nodecount(df, 'feasibility', output_dir)
+    for hall_type in ['wrong_format', 'wrong_length', 'duplicate_nodes', 'made_up_node']:
+        plot_metric_vs_nodecount(df, hall_type, output_dir, pad_top=True)
+
 def main():
     # Load and process data
     data = load_data('outputs/accuracy.json')
@@ -158,8 +217,10 @@ def main():
     
     # Create visualizations
     plot_metrics(df, 'outputs/plots')
+    make_results_table(df, 'outputs/plots')
+    plot_all_metrics_vs_nodecount(df, 'outputs/plots')
     
-    print("Visualizations have been saved to outputs/plots/")
+    print("Visualizations and table have been saved to outputs/plots/")
 
 if __name__ == "__main__":
     main()

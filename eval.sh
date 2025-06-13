@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-models=('opt125')
-encoders=('GATEncoder' 'GINEncoder')
+models=('pythia160' 'opt125')
+encoders=('SAGEEncoder' 'GATEncoder' 'GINEncoder')
 
 # Iterate over each combination
 for model in "${models[@]}"; do
